@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Iks Oks - PvE</title>
+</head>
+
+<body class="pvaiBody">
+    <div class="header">
+        <div class="pvpPlacer">
+            <a href="./pvp.html">
+                <button id="pvpBtn" class="navBtn">PvP</button>
+            </a>
+        </div>
+        <div class="logoPlacer">
+            <a href="./index.html">
+                <img class="logoCenter" src="./img/kknew.png">
+            </a>
+        </div>
+        <div class="pvaiPlacer">
+            <a href="./pvai.html">
+                <button id="pvaiBtn" class="navBtn">PvAI</button>
+            </a>
+        </div>
+    </div>
+    
+            <div class="main">
+                    
+                    <div class="boardPvAI" id="board">
+                        <div class="row">
+                            <div class="fieldAI" id="0" onclick="makeAMoveFieldZero()" onmouseover="MouseOverHandler(0)"
+                                onmouseout="MouseOutHandler(0)">
+            
+                            </div>
+                            <div class="fieldAI" id="1" onclick="makeAMoveFieldOne()" onmouseover="MouseOverHandler(1)"
+                                onmouseout="MouseOutHandler(1)">
+            
+                            </div>
+                            <div class="fieldAI" id="2" onclick="makeAMoveFieldTwo()" onmouseover="MouseOverHandler(2)"
+                                onmouseout="MouseOutHandler(2)">
+            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="fieldAI" id="3" onclick="makeAMoveFieldThree()" onmouseover="MouseOverHandler(3)"
+                                onmouseout="MouseOutHandler(3)">
+            
+                            </div>
+                            <div class="fieldAI" id="4" onclick="makeAMoveFieldFour()" onmouseover="MouseOverHandler(4)"
+                                onmouseout="MouseOutHandler(4)">
+            
+                            </div>
+                            <div class="fieldAI" id="5" onclick="makeAMoveFieldFive()" onmouseover="MouseOverHandler(5)"
+                                onmouseout="MouseOutHandler(5)">
+            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="fieldAI" id="6" onclick="makeAMoveFieldSix()" onmouseover="MouseOverHandler(6)"
+                                onmouseout="MouseOutHandler(6)">
+            
+                            </div>
+                            <div class="fieldAI" id="7" onclick="makeAMoveFieldSeven()" onmouseover="MouseOverHandler(7)"
+                                onmouseout="MouseOutHandler(7)">
+            
+                            </div>
+                            <div class="fieldAI" id="8" onclick="makeAMoveFieldEight()" onmouseover="MouseOverHandler(8)"
+                                onmouseout="MouseOutHandler(8)">
+            
+                            </div>
+                        </div>
+            
+                    </div>
+                    <div class="winner">
+                        <p id="turn2play"></p>
+                    </div>
+                </div>
+                
+</body>
+<script src="./js/pvai.js"></script>
+
+</html>

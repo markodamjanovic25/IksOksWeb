@@ -1,0 +1,280 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic";
+  color: #240063;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.header {
+  max-width: 1920px;
+  height: 10vh;
+}
+.pvpPlacer {
+  width: 19.235%;
+  text-align: start;
+  height: 100%;
+  float: left;
+}
+.logoPlacer {
+  width: 61.53%;
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+}
+.pvaiPlacer {
+  width: 19.235%;
+  text-align: end;
+  height: 100%;
+  float: right;
+}
+.logoCenter {
+  width: 7%;
+  height: 75%;
+  margin-top: 1%;
+}
+.navBtn {
+  width: 5vh;
+  height: 5vh;
+  font-size: 3vh;
+  border: 0;
+  margin-top: 3vh;
+}
+#pvpBtn {
+  background-color: #ffc852;
+  color: #240063;
+  margin-left: 17vh;
+}
+#pvpBtn:hover {
+  color: whitesmoke;
+}
+#pvaiBtn {
+  background-color: #240063;
+  color: #ffc852;
+  margin-right: 14vh;
+}
+#pvaiBtn:hover {
+  color: whitesmoke;
+}
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 7vh;
+}
+.boardPvP {
+  margin: auto auto auto 25%;
+  width: 55%;
+  height: 55vh;
+  pointer-events: none;
+  position: relative;
+  text-align: center;
+}
+.boardPvAI {
+  margin: auto auto auto 25%;
+  width: 55%;
+  height: 55vh;
+  box-sizing: content-box;
+  text-align: center;
+}
+.row {
+  width: 100%;
+  height: 33%;
+}
+.field {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-radius: 0.2rem;
+  border: 3px solid #240063;
+}
+.fieldAI {
+  float: left;
+  width: 30%;
+  height: 100%;
+  border-radius: 0.2rem;
+  border: 3px solid #ffc852;
+}
+.fieldCompleted {
+  font-size: 50px;
+  color: #240063;
+  margin-top: 45px;
+}
+.winner {
+  text-align: center;
+}
+#turn2play {
+  font-size: 25px;
+  color: #240063;
+  text-shadow: whitesmoke 0.1rem 0.1rem;
+}
+.info {
+  margin: auto;
+  margin-bottom: 70px;
+  width: 55%;
+  height: 20px;
+}
+.firstPlayerInfo {
+  float: left;
+  text-align: right;
+  width: 33%;
+}
+.secondPlayerInfo {
+  width: 33%;
+  float: right;
+  text-align: left;
+}
+.buttonDiv {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.mainBtn {
+  color: #ffc852;
+  width: 35%;
+  height: 3vh;
+  background-image: linear-gradient(to right, #240063, #3e00ab);
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+}
+.newGameBtnAnchor {
+  color: whitesmoke;
+}
+.placeForLogo {
+  width: 25%;
+  float: left;
+  text-align: left;
+}
+.links {
+  width: 75%;
+  float: right;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+}
+input {
+  border: 1px solid #240063;
+  border-radius: 0.2rem;
+  height: 25px;
+}
+.firstPlayer {
+  font-size: 25px;
+  color: #240063;
+}
+.inputTypeText {
+  background-color: whitesmoke;
+  color: #240063;
+  width: 45%;
+}
+.secondPlayer {
+  font-size: 25px;
+  color: whitesmoke;
+}
+.bg-purple {
+  background-color: #240063;
+}
+.bg-orange {
+  background-color: #ffc852;
+}
+
+.border-red {
+  border: 1px dashed red;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.apply-shake {
+  animation: shake 0.55s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+::placeholder {
+  color: #240063;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.3;
+}
+::selection {
+  background-color: #240063;
+  color: white;
+}
+.indexBody {
+  background: url(../img/indexBackground.png) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.pvpBody {
+  background: url(../img/pvpBackgroundNew.png) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.pvaiBody {
+  background: url(../img/pvaiBackgroundNew.png) no-repeat center center fixed;
+  background-size: 100% 100%;
+}
+.indexBtn {
+  display: inline-block;
+  width: 25vh;
+  height: 5vh;
+  background-color: #ffc852;
+  border: 0;
+  color: #240063;
+  font-size: 19px;
+}
+.indexBtn:hover {
+  color: #ffc852;
+  background-color: #240063;
+  border: 2px dashed #ffc852;
+}
+.indexUpper {
+  height: 75%;
+  width: 100%;
+}
+.buttonsPlacer {
+  width: 100%;
+  height: 7vh;
+  display: inline-block;
+}
+.leftButtonPlacer {
+  float: left;
+  width: 50%;
+}
+.rightButtonPlacer {
+  width: 50;
+}
+#indexPvPBtn {
+  float: right;
+  margin-right: 3vh;
+}
+#indexPvAIBtn {
+  margin-left: 3vh;
+}
+.indexLogo {
+  margin-top: 10vh;
+  height: 97px;
+  width: 102px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Iks Oks - PvP</title>
+</head>
+
+<body class="pvpBody">
+    <div class="header">
+        <div class="pvpPlacer">
+            <a href="pvp.html">
+                <button id="pvpBtn" class="navBtn">PvP</button>
+            </a>
+        </div>
+        <div class="logoPlacer">
+            <a href="./index.html">
+                <img class="logoCenter" src="./img/kknew.png">
+            </a>
+        </div>
+        <div class="pvaiPlacer">
+            <a href="pvai.html">
+                <button id="pvaiBtn" class="navBtn">PvAI</button>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="info" id="info">
+            <div class="gameNotStarted" id="gameNotStarted">
+                <div class="firstPlayerInfo">
+                    <form id="playerNameInput">
+                        <form class="firstPlayerForm">
+                            <input class="inputTypeText tooltip" name="FPN" placeholder="First player" minlength="4"
+                                type="text" id="firstPlayerName"
+                                title="Place your 4 or more character long name here" />
+                        </form>
+                </div>
+                <div class="buttonDiv">
+                    <input type="submit" class="mainBtn" id="startGameBtn" name="mainButton" onclick="StartGame()"
+                        value="START">
+                </div>
+                <div class="secondPlayerInfo">
+                    <form class="secondPlayerForm">
+                        <input class="inputTypeText tooltip" name="SPN" placeholder="Second player" type="text"
+                            id="secondPlayerName" title="Place your 4 or more character long name here" />
+                    </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="boardPvP" id="board">
+            <div class="row">
+                <div class="field"id="0" onclick="makeAMove(0)" onmouseover="MouseOverHandler(0)"
+                    onmouseout="MouseOutHandler(0)">
+
+                </div>
+                <div class="field" id="1" onclick="makeAMove(1)" onmouseover="MouseOverHandler(1)"
+                    onmouseout="MouseOutHandler(1)">
+
+                </div>
+                <div class="field" id="2" onclick="makeAMove(2)" onmouseover="MouseOverHandler(2)"
+                    onmouseout="MouseOutHandler(2)">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="field" id="3" onclick="makeAMove(3)" onmouseover="MouseOverHandler(3)"
+                    onmouseout="MouseOutHandler(3)">
+
+                </div>
+                <div class="field" id="4" onclick="makeAMove(4)" onmouseover="MouseOverHandler(4)"
+                    onmouseout="MouseOutHandler(4)">
+
+                </div>
+                <div class="field" id="5" onclick="makeAMove(5)" onmouseover="MouseOverHandler(5)"
+                    onmouseout="MouseOutHandler(5)">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="field" id="6" onclick="makeAMove(6)" onmouseover="MouseOverHandler(6)"
+                    onmouseout="MouseOutHandler(6)">
+
+                </div>
+                <div class="field" id="7" onclick="makeAMove(7)" onmouseover="MouseOverHandler(7)"
+                    onmouseout="MouseOutHandler(7)">
+
+                </div>
+                <div class="field" id="8" onclick="makeAMove(8)" onmouseover="MouseOverHandler(8)"
+                    onmouseout="MouseOutHandler(8)">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="winner">
+            <p id="turn2play">Type in player names!</p>
+        </div>
+    </div>
+    <script src="./js/pvp.js"></script>
+</body>
+
+</html>
